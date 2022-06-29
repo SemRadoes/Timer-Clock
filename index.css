@@ -1,9 +1,14 @@
+*{
+    margin: 0;
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: radial-gradient(white 30%, black 70%);
+    background: rgb(8, 8, 8);
+    transform : translateX(-50px);
+    transform : translateY(-50px);
 }
 
 .clock{
@@ -16,12 +21,18 @@ body{
 }
 
 .countdown{
-    background-color:bisque;
+    background-color:black;
+    color: white;
     border-radius: 1rem;
     backdrop-filter: blur(10px);
     text-align: center;
     font-size: 5rem;
     padding: 2rem;
+    box-shadow: inset 5px 5px 5px rgb(159, 25, 25), 2px 5px 5px rgb(159, 25, 25);
+    transition: 0.2s;
+}
+.Div:hover{
+    transform: scale(1.1);
 }
 
 .Div{
@@ -33,5 +44,6 @@ body{
 }
 
 span{
-    font-size: 2rem;;
+    font-size: 2rem;
+    color: aliceblue;
 }
